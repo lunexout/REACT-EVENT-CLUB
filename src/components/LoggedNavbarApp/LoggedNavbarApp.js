@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import CategoryOutlinedIcon from "@material-ui/icons/CategoryOutlined";
 
 import { Link } from "react-router-dom";
+
 import "./LoggedNavbarApp.css";
 
 export default function LoggedNavbarApp() {
