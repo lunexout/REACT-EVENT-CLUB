@@ -9,6 +9,7 @@ import CategoryOutlinedIcon from "@material-ui/icons/CategoryOutlined";
 
 
 import { Link } from "react-router-dom";
+
 import "./LoggedNavbarApp.css";
 
 
