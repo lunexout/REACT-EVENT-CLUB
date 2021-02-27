@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -7,10 +7,15 @@ import Button from "@material-ui/core/Button";
 
 import CategoryOutlinedIcon from "@material-ui/icons/CategoryOutlined";
 
+
 import { Link } from "react-router-dom";
 import "./LoggedNavbarApp.css";
 
+
+import UserModal from './../UserModalApp/UserModalApp'
+
 export default function LoggedNavbarApp() {
+
   return (
     <>
       <AppBar position="static">
@@ -29,12 +34,15 @@ export default function LoggedNavbarApp() {
           </Typography>
 
           <div style={{ margin: "auto" }}></div>
-          <Link className="__link" to="/signup">
-            <Button color="inherit">PROFILE</Button>
-          </Link>
+
+          <Button>
+            <UserModal/>
+          </Button>
+
 
         </Toolbar>
       </AppBar>
+
     </>
   );
 }

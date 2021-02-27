@@ -7,7 +7,10 @@ export default function EventBookApp(){
     return(
         <>
             <LoggedNavbar/>
-            <h1>event book</h1>
+            <div className="__container">
+                <h1>suuukaaaa</h1>
+            </div>
+
         </>
     );
 }
